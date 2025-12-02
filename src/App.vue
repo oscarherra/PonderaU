@@ -191,7 +191,6 @@ const detalleCalculo = computed(() =>
 );
 </script>
 
-<style scoped>
 /* ======== LAYOUT GENERAL ======== */
 
 .app-shell {
@@ -292,14 +291,8 @@ const detalleCalculo = computed(() =>
 
 .grid {
   display: grid;
-  grid-template-columns: minmax(0, 2.3fr) minmax(380px, 1fr);
+  grid-template-columns: minmax(0, 2.3fr) minmax(340px, 1fr);
   gap: 2.8rem;
-}
-
-@media (max-width: 880px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ======== CARDS ======== */
@@ -543,4 +536,121 @@ const detalleCalculo = computed(() =>
   display: flex;
   justify-content: flex-start;
 }
-</style>
+
+/* ================== RESPONSIVE MOBILE ================== */
+
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0.8rem 1.1rem;
+  }
+
+  .brand {
+    gap: 0.6rem;
+  }
+
+  .logo-dot {
+    width: 34px;
+    height: 34px;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.16);
+  }
+
+  .brand-title {
+    font-size: 1.05rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .pill-soft {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .app-container {
+    padding: 1.8rem 1.1rem 2.4rem;
+  }
+
+  .hero {
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+    line-height: 1.15;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .card {
+    padding: 1.4rem 1.2rem;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .card-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .card-header p {
+    font-size: 0.9rem;
+  }
+
+  .pill {
+    align-self: flex-start;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.7rem;
+  }
+
+  .tabla-cursos th,
+  .tabla-cursos td {
+    padding: 0.7rem 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .tabla-cursos input {
+    font-size: 0.9rem;
+    padding: 0.55rem 0.6rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .resumen-item {
+    font-size: 0.95rem;
+  }
+
+  .resumen-item strong {
+    font-size: 1.15rem;
+  }
+
+  .ponderado-valor strong {
+    font-size: 2rem;
+  }
+
+  .hint {
+    font-size: 0.85rem;
+  }
+
+  .footer {
+    padding: 1rem 1.2rem 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+}   
+
