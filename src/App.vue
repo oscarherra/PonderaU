@@ -123,9 +123,9 @@
       </section>
     </main>
 
-    <footer class="footer">
-      Hecho con Vue • Proyecto académico
-    </footer>
+  <footer class="footer">
+  Gracias por usar PonderaU - ¡Muchos éxitos con tu semestre!
+</footer>
   </div>
   <AdBanner />
 </template>
@@ -191,6 +191,7 @@ const detalleCalculo = computed(() =>
 );
 </script>
 
+<style scoped>
 /* ======== LAYOUT GENERAL ======== */
 
 .app-shell {
@@ -485,11 +486,20 @@ const detalleCalculo = computed(() =>
 /* ======== FOOTER ======== */
 
 .footer {
-  padding: 1.4rem 3rem;
+  padding: 1.6rem 3rem;
+  text-align: center;
   font-size: 1rem;
-  color: #9ca3af;
-  text-align: right;
-  margin-top: auto;
+  color: #64748b;
+  background: linear-gradient(to right, #f8fafc, #eef2ff);
+  border-top: 1px solid rgba(226, 232, 240, 0.8);
+  margin-top: 3rem;
+}
+.footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
 }
 
 /* ===== BOTÓN "VER CÁLCULO" ===== */
@@ -652,5 +662,6 @@ const detalleCalculo = computed(() =>
     text-align: center;
     font-size: 0.85rem;
   }
-}   
+}
 
+</style>
