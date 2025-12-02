@@ -123,9 +123,12 @@
       </section>
     </main>
 
-  <footer class="footer">
-  Gracias por usar PonderaU - ¡Muchos éxitos con tu semestre!
+<footer class="footer">
+   Gracias por usar PonderaU - ¡Muchos éxitos con tu semestre!<br />
+  © {{ new Date().getFullYear() }} PonderaU · Hecho por Óscar Herra · 
+  <a href="https://www.instagram.com/oscar_herraa13/" class="footer-link">Instagram</a>
 </footer>
+
   </div>
   <AdBanner />
 </template>
@@ -417,10 +420,6 @@ const detalleCalculo = computed(() =>
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-
-.btn-icon:hover {
-  background: #fecaca;
 }
 
 /* ======== RESULTADO ======== */
